@@ -1,0 +1,17 @@
+- Install CSS Normalize
+- (Optional) Install CSS responsive framework (https://semantic-ui.com/, or
+  https://getbootstrap.com/2.3.2/)
+- Learn about CSS grid system
+- Build responsive, mobile-first
+- Create pixel perfect mockup of browse page.
+   (Create a screenshot using FireShot or similar)
+   (Overlay screenshot using PerfectPixel)
+
+Resources:
+
+Take a tutorial that teaches about position (absolute, relative, fixed, static)
+
+Learn about `display` property (block, inline, inline-block, flex, table)
+
+https://flexboxfroggy.com/
+https://adamschwartz.co/magic-of-css/

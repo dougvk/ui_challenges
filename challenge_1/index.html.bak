@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.4/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.4/dist/semantic.min.js"></script>
+  </head>
+  <body>
+    <div class="ui grid">
+
+      <div class="computer only row">
+        <div class="column">
+          <div class="ui menu">
+            <a class="item">Menu Item A</a>
+            <a class="item">Menu Item B</a>
+            <a class="item">Menu Item C</a>
+            <a class="item">Menu Item D</a>
+            <div class="item">
+              <div class="ui transparent icon input">
+                <input type="text" placeholder="Search...">
+                <i class="search link icon"></i>
+              </div>
+            </div>
+            <div class="right menu">
+              <a class="item">Help</a>
+              <a class="item">
+                <i class="compass outline icon"></i>
+              </a>
+              <a class="item">Sign out</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tablet mobile only row">
+        <div class="column">
+          <div class="ui menu">
+            <a id="hambuger" class="item">
+              <i class="bars icon"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="ui left sidebar vertical menu">
+      <a class="item">Menu Item A</a>
+      <a class="item">Menu Item B</a>
+      <a class="item">Menu Item C</a>
+      <a class="item">Menu Item D</a>
+    </div>
+
+    <div class="pusher">
+        <div id="content" class="ui segment">
+            Content here
+        </div>
+    </div>
+
+    <script>
+      $('.ui.sidebar').sidebar({
+          context: $('.pusher'),
+          transition: 'push',
+          mobileTransition: 'overlay'
+      }).sidebar('attach events', '#hamburger');
+    </script>
+  </body>
+</html>
